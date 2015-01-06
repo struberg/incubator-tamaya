@@ -22,7 +22,7 @@ under the License.
 
     <parent>
         <groupId>org.apache.tamaya</groupId>
-        <artifactId>tamaya-all</artifactId>
+        <artifactId>tamaya-java8</artifactId>
         <version>0.2-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
