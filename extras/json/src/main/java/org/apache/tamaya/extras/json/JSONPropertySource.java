@@ -30,7 +30,6 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
-import java.util.Optional;
 
 import static java.lang.String.format;
 
@@ -57,10 +56,10 @@ public class JSONPropertySource
     }
 
     @Override
-    public Optional<String> get(String key) {
+    public String get(String key) {
         Objects.requireNonNull(key, "Key must not be null");
 
-        return Optional.ofNullable(getProperties().get(key));
+        return getProperties().get(key);
     }
 
     @Override
